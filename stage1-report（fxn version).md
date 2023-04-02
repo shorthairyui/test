@@ -12,18 +12,22 @@ Qt6
 房向南(此版本)
 
 尽管是一个小组大作业，我们小组(team8)却有着两份不同的版本，此版本为小组中房向南完成。
+
 因这些因素给助教带来检查的不便我深表歉意。
 
 ## 详细设计
 
 ### 代码框架
 
-![代码框架](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFomC6eacn0NnMXpMGIPLqDQcH39iXP1ag5o7KsFO58wB2xUNI4SGvx*cgwr*BC304yE!/b&bo=aQLaBAAAAAADF4c!&rf=viewer_4=10x)
+![代码框架](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFomC6eacn0NnMXpMGIPLqDQcH39iXP1ag5o7KsFO58wB2xUNI4SGvx*cgwr*BC304yE!/b&bo=aQLaBAAAAAADF4c!&rf=viewer_4)
 
 如图，start是开始界面，mainwindow是下棋界面，setting是设置界面。
+
 item是棋子的类，block是棋子块的类。
+
 计时器及逻辑判断等闲杂内容在mainwindow中实现。
-本框架参考了网上一些五子棋的框架，如item的类，但是仅止于此。
+
+本框架参考了网上一些五子棋的框架，如item的类，但是仅止于此。[参考网址](https://blog.csdn.net/muLanlh/article/details/108936757#t2)
 
 ### 代码简介
 
@@ -44,13 +48,13 @@ item是棋子的类，block是棋子块的类。
 
 + 游戏结果部分
 
-    本作业采取QMessageBox中的information和question来实现结果展示。在判断胜负之后利用statistic函数和jiesuan函数
+    本作业采取QMessageBox中的information和question来实现结果展示。
 
-    来生成结算信息字符串(QString类型)。然后利用QMessagebox展示并保存在d盘的txt文档里(只保存最新对局)。由于不是
+    在判断胜负之后利用statistic函数和jiesuan函数来生成结算信息字符串(QString类型)。然后利用QMessagebox展示并保存在d盘的txt文档里(只保存最新对局)。
 
-    所有电脑都有d盘而又没有c盘权限，这里的游戏日志保存方法值得商榷。结算展示后，会询问是否开启新的一局。若是，则新
+    由于不是所有电脑都有d盘而又没有c盘权限，这里的游戏日志保存方法值得商榷。
 
-    建一个mainwindow，若否，则新建一个start窗口，并关掉原来的mainwindow。
+    结算展示后，会询问是否开启新的一局。若是，则新建一个mainwindow，若否，则新建一个start窗口。然后关掉原来的mainwindow。
 
 ![结算信息](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYGi0RKcf.5hq.dTUuyyl2dfllAVGGoxkxzL67xIAYjdmX.JNK3BguTYDYjcaEj7jw!/b&bo=0gFJAgAAAAADF6o!&rf=viewer_4)
 
@@ -68,7 +72,7 @@ item是棋子的类，block是棋子块的类。
 
   界面设计采取绿色为主基调，背景是知乎“十大最高级渐变颜色”这一专栏介绍的渐变色的其中一种(不仔细看哪有渐变)。
 
-  开始界面有着“开始”和“设置”两个按钮，分别对应mainwindow窗口和setting窗口。开始界面中间的部分味蕾美观采取白色圆角设计
+  开始界面有着“开始”和“设置”两个按钮，分别对应mainwindow窗口和setting窗口。开始界面中间的部分为了美观采取白色圆角设计
 
 ![游戏界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFokAdjWrYi7DMK*MqARc9Y412Prpm9Yopc64isXnFg1PpQ9oiqeiUDEU8f2XtykS3Vc!/b&bo=AwU8AwAAAAADFws!&rf=viewer_4)
 
@@ -82,18 +86,13 @@ item是棋子的类，block是棋子块的类。
 
   下方空余区域为以后可能存在的设置留下位置。
 
+  ui设计是利用一篇CSDN文章学习的，也引用了小部分内容[ui参考](https://blog.csdn.net/github_55295425/article/details/122016327)
+  
 ## 遇到的困难
 
 1. 在C++没学多少的情况下写此作业十分考验临场学习水平。
 2. 因为一些事耽误了完成进程导致写的有些仓促。
 3. 因水平所限，ui设计和逻辑判断不尽如人意。
-
-## 鸣谢
-
-+ 网络资源的大力支持
-+ 理学院侯同学的双人对战测试
-+ 同小组两位同学的对我的启发和帮助
-+ 助教和老师的细心讲解
 
 ## 展望
 
@@ -101,3 +100,12 @@ item是棋子的类，block是棋子块的类。
 2. 添加联机功能以及尝试ai功能
 3. 进一步美化界面设计
 4. 期中考试加油()
+
+## 鸣谢
+
++ 网络资源的大力支持
++ 理学院侯同学的双人对战测试
++ 同小组两位同学的对我的启发和帮助
++ 助教和老师的细心讲解
++ 中国人民大学提供的平台
++ ~~B站给予的精神支持~~
