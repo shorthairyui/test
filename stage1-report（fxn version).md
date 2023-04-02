@@ -18,7 +18,7 @@ Qt6
 
 1. 代码框架
 
-![代码框架](file:///C:/Users/pc/Desktop/d3d6ed635d20ac64c51cd29ca2ae10c.png)
+![代码框架](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFomC6eacn0NnMXpMGIPLqDQcH39iXP1ag5o7KsFO58wB2xUNI4SGvx*cgwr*BC304yE!/b&bo=aQLaBAAAAAADF4c!&rf=viewer_4)
 
 如图，start是开始界面，mainwindow是下棋界面，setting是设置界面。
 item是棋子的类，block是棋子块的类。
@@ -26,7 +26,7 @@ item是棋子的类，block是棋子块的类。
 本框架参考了网上一些五子棋的框架，如item的类，但是仅止于此。
 2. 代码简介
 
-![代码简介](file:///C:/Users/pc/Desktop/c13c1ac4d97f664e74fca09fea5fe44.png)
+![代码简介](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYvHacYkyYo64QlUFnqupVK8jSR5KiRutl4.*Kf6qUMSuc7Lk*8iagGnCaqdW7kSlA!/b&bo=JAU4BAAAAAADNw8!&rf=viewer_4)
 
 + 逻辑判断部分
 
@@ -51,9 +51,8 @@ item是棋子的类，block是棋子块的类。
 
     建一个mainwindow，若否，则新建一个start窗口，并关掉原来的mainwindow。
 
-![结算信息](file:///C:/Users/pc/Desktop/17721d695430e2f88c9e88f81cf26c5.png)
-
-    图片是利用认输做的示例。
+![结算信息](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYGi0RKcf.5hq.dTUuyyl2dfllAVGGoxkxzL67xIAYjdmX.JNK3BguTYDYjcaEj7jw!/b&bo=0gFJAgAAAAADF6o!&rf=viewer_4)
+图片是利用认输做的示例。
 
 + 其他部分
 
@@ -63,11 +62,11 @@ item是棋子的类，block是棋子块的类。
 
 3. ui设计
 
-![开始界面](file:///C:/Users/pc/Desktop/1bb643fce21992bafd59c030d63f765.png)
+![开始界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYJ2EFtY4DGt9uefx8oS9vQ18qkOr0m8cF7lu*nPbzfBkWUOjk21I7qvKbDTnYqSqo!/b&bo=NAUnBAAAAAADFyA!&rf=viewer_4)
 
-![游戏界面](file:///C:/Users/pc/Desktop/e878c7b61cd4f91920d634d9ff6ed35.png)
+![游戏界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFokAdjWrYi7DMK*MqARc9Y412Prpm9Yopc64isXnFg1PpQ9oiqeiUDEU8f2XtykS3Vc!/b&bo=AwU8AwAAAAADFws!&rf=viewer_4)
 
-![设置界面](file:///C:/Users/pc/Desktop/dfa481a58ba3335e3129f6c06518d37.png)
+![设置界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFok4dDE0iOyZS176uVoERTGQo3h0EqZ8dof046aG2HSJvxjFCpPVSUf.Jd7AuoSJ0kY!/b&bo=NAUnBAAAAAADFyA!&rf=viewer_4)
 
   开始界面的界面设计采取绿色为主基调，背景是知乎“十大最高级渐变颜色”这一专栏介绍的渐变色的其中一种(不仔细看哪
 
@@ -81,14 +80,14 @@ item是棋子的类，block是棋子块的类。
 
 ## 鸣谢
 
-+ 网络的大力支持
++ 网络资源的大力支持
 + 理学院侯同学的双人对战测试
 + 同小组两位同学的对我的启发和帮助
 + 助教和老师的细心讲解
 
 ## 展望
 
-1. 测试出可能存在bug，并用更简洁的办法写出逻辑判断。
-2. 添加联机功能
+1. 测试出可能存在的bug，并用更简洁的办法写出逻辑判断
+2. 添加联机功能以及尝试ai功能
 3. 进一步美化界面设计
 4. 期中考试加油()
