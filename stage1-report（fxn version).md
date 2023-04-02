@@ -18,7 +18,7 @@ Qt6
 
 ### 代码框架
 
-![代码框架](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFomC6eacn0NnMXpMGIPLqDQcH39iXP1ag5o7KsFO58wB2xUNI4SGvx*cgwr*BC304yE!/b&bo=aQLaBAAAAAADF4c!&rf=viewer_4=100x)
+![代码框架](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFomC6eacn0NnMXpMGIPLqDQcH39iXP1ag5o7KsFO58wB2xUNI4SGvx*cgwr*BC304yE!/b&bo=aQLaBAAAAAADF4c!&rf=viewer_4=10x)
 
 如图，start是开始界面，mainwindow是下棋界面，setting是设置界面。
 item是棋子的类，block是棋子块的类。
