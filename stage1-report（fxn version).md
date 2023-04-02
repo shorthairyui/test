@@ -16,7 +16,7 @@ Qt6
 
 ## 详细设计
 
-1. 代码框架
+### 代码框架
 
 ![代码框架](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFomC6eacn0NnMXpMGIPLqDQcH39iXP1ag5o7KsFO58wB2xUNI4SGvx*cgwr*BC304yE!/b&bo=aQLaBAAAAAADF4c!&rf=viewer_4)
 
@@ -24,7 +24,8 @@ Qt6
 item是棋子的类，block是棋子块的类。
 计时器及逻辑判断等闲杂内容在mainwindow中实现。
 本框架参考了网上一些五子棋的框架，如item的类，但是仅止于此。
-2. 代码简介
+
+### 代码简介
 
 ![代码简介](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYvHacYkyYo64QlUFnqupVK8jSR5KiRutl4.*Kf6qUMSuc7Lk*8iagGnCaqdW7kSlA!/b&bo=JAU4BAAAAAADNw8!&rf=viewer_4)
 
@@ -52,6 +53,7 @@ item是棋子的类，block是棋子块的类。
     建一个mainwindow，若否，则新建一个start窗口，并关掉原来的mainwindow。
 
 ![结算信息](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYGi0RKcf.5hq.dTUuyyl2dfllAVGGoxkxzL67xIAYjdmX.JNK3BguTYDYjcaEj7jw!/b&bo=0gFJAgAAAAADF6o!&rf=viewer_4)
+
 图片是利用认输做的示例。
 
 + 其他部分
@@ -60,17 +62,25 @@ item是棋子的类，block是棋子块的类。
   + 再来一局设计的很鸡肋，类似于点击是否开启新的一局的Yes。
   + 返回就是返回start界面。想去setting界面得这样走。
 
-3. ui设计
+### ui设计
 
 ![开始界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYJ2EFtY4DGt9uefx8oS9vQ18qkOr0m8cF7lu*nPbzfBkWUOjk21I7qvKbDTnYqSqo!/b&bo=NAUnBAAAAAADFyA!&rf=viewer_4)
 
+  界面设计采取绿色为主基调，背景是知乎“十大最高级渐变颜色”这一专栏介绍的渐变色的其中一种(不仔细看哪有渐变)。
+
+  开始界面有着“开始”和“设置”两个按钮，分别对应mainwindow窗口和setting窗口。开始界面中间的部分味蕾美观采取白色圆角设计
+
 ![游戏界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFokAdjWrYi7DMK*MqARc9Y412Prpm9Yopc64isXnFg1PpQ9oiqeiUDEU8f2XtykS3Vc!/b&bo=AwU8AwAAAAADFws!&rf=viewer_4)
+
+  游戏界面以简洁为主，其实可以采取贴图的方式规避QPainter画的图被背景挡住的问题，此问题待阶段二解决。
+
+  右边的认输和再来一局及返回在前文都有介绍，这里不再赘述。四个lineedit分别为总计时和读秒。
 
 ![设置界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFok4dDE0iOyZS176uVoERTGQo3h0EqZ8dof046aG2HSJvxjFCpPVSUf.Jd7AuoSJ0kY!/b&bo=NAUnBAAAAAADFyA!&rf=viewer_4)
 
-  开始界面的界面设计采取绿色为主基调，背景是知乎“十大最高级渐变颜色”这一专栏介绍的渐变色的其中一种(不仔细看哪
+  设置中可以调整棋盘行数，读秒时长，读秒次数。
 
-  有渐变)。游戏界面以简洁为主，其实可以采取贴图的方式规避QPainter画的图被背景挡住的问题，此问题待阶段二解决。
+  下方空余区域为以后可能存在的设置留下位置。
 
 ## 遇到的困难
 
