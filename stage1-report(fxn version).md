@@ -4,16 +4,19 @@
 
 1. 设计题目
 
-不围棋联机对战游戏（第一部分：初步实现游戏界面和简单逻辑）
+    不围棋联机对战游戏（第一部分：初步实现游戏界面和简单逻辑）
+
 2. 阶段设计内容
 
-利用C++设计一款可以轮流落子和具有简单判断逻辑~~并且有很多bug笨重至极~~的不围棋游戏。
+    利用C++设计一款可以轮流落子和具有简单判断逻辑~~并且有很多bug笨重至极~~的不围棋游戏。
+
 3. 开发工具
 
-Qt6
+    Qt6
+
 4. 小组分工
 
-房向南(此版本)
+    房向南(此版本)
 
 尽管是一个小组大作业，我们小组(team8)却有着两份不同的版本，此版本为小组中房向南完成。
 
@@ -35,7 +38,7 @@ item是棋子的类，block是棋子块的类。
 
 ### 代码简介
 
-![代码简介](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYvHacYkyYo64QlUFnqupVK8jSR5KiRutl4.*Kf6qUMSuc7Lk*8iagGnCaqdW7kSlA!/b&bo=JAU4BAAAAAADNw8!&rf=viewer_4)
+![代码简介](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5txrh9EJlEmJ7Ou*pCi1fPqDT6iyONhxLeufBc8CtqBKFWA0DxjYLvltEZ24SPiwf69mqHecfr2diG0fd7jAWHo!/b&bo=XgQ4BAAAAAADN3Q!&rf=viewer_4)
 
 + 逻辑判断部分
 
@@ -54,13 +57,15 @@ item是棋子的类，block是棋子块的类。
 
     在判断胜负之后利用statistic函数和jiesuan函数来生成结算信息字符串(QString类型)。然后利用QMessagebox展示并保存在d盘的txt文档里(只保存最新对局)。
 
+    ![结算信息](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5onB0iOhKAqWsICw*j1y3YOPGuJSyXM7FKgs9QNNtqMJQZ.BNouqDXVBUGnnnv0KMpAwziqJp2CSt700EK84lTQ!/b&bo=GAQOAwAAAAADBzM!&rf=viewer_4)
+
     由于不是所有电脑都有d盘而又没有c盘权限，这里的游戏日志保存方法值得商榷。
 
     结算展示后，会询问是否开启新的一局。若是，则新建一个mainwindow；若否，则新建一个start窗口。然后关掉原来的mainwindow。
 
-![结算信息](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYGi0RKcf.5hq.dTUuyyl2dfllAVGGoxkxzL67xIAYjdmX.JNK3BguTYDYjcaEj7jw!/b&bo=0gFJAgAAAAADF6o!&rf=viewer_4)
+    ![结算信息](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5mktKFftinw5rFZeObyKhpYGi0RKcf.5hq.dTUuyyl2dfllAVGGoxkxzL67xIAYjdmX.JNK3BguTYDYjcaEj7jw!/b&bo=0gFJAgAAAAADF6o!&rf=viewer_4)
 
-图片是利用认输做的示例。
+    图片是利用认输做的示例。
 
 + 其他部分
 
@@ -81,6 +86,10 @@ item是棋子的类，block是棋子块的类。
 >游戏界面以简洁为主，其实可以采取贴图的方式规避QPainter画的图被背景挡住的问题，此问题待阶段二解决。
 
 >右边的认输和再来一局及返回在前文都有介绍，这里不再赘述。四个lineedit分别为总计时和读秒。
+
+![轮流落子](http://a1.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5uMULMdkhn4oQeXr6BNnFJoURTwwO0a7nTmPH8D1cRrjXm76O3Mkh0gTDOud72TgVL5rn4e7CLpfNbyiDc8CVE4!/c&ek=1&kp=1&pt=0&bo=9wQ4AwAAAAADF*o!&tl=1&vuin=3328675434&tm=1680519600&dis_t=1680519865&dis_k=4a94558817d78f84b36265a87cdeaa53&sce=60-2-2&rf=viewer_4)
+
+>这是轮流落子展示，我利用深蓝色或者浅黄色标记最近一颗的落子。这里的“高亮”不够显眼，好在只涉及颜色挑选的问题。
 
 ![设置界面](http://m.qpic.cn/psc?/V13tRFxc0Vxo8W/ruAMsa53pVQWN7FLK88i5nWye3jR9EHevwHUQv7wFok4dDE0iOyZS176uVoERTGQo3h0EqZ8dof046aG2HSJvxjFCpPVSUf.Jd7AuoSJ0kY!/b&bo=NAUnBAAAAAADFyA!&rf=viewer_4)
 
